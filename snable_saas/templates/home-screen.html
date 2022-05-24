@@ -1,0 +1,542 @@
+{% extends 'index.html' %} {% load static %} {% block title %}
+<title>Home Screen</title>
+{% endblock title %}
+
+<!-- Own Home Screen CSS -->
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/home-screen.css' %}" />
+{% endblock own_css %}
+
+<!-- Start Slider -->
+{% block slider %}
+<div class="row slider pl-5 pr-5">
+    <div class="col-md-12">
+        <div class="row">
+            <!-- Start Sub Heading, Heading, Buttons -->
+            <div class="col-md-8 home-main-heading">
+                <!-- Start Saas based headline -->
+                <div class="row">
+                    <div class="col-md-12 s-b-headline">
+                        Seamless, Fast, Easy-to-understand.
+                    </div>
+                </div>
+                <!-- End Saas based headline -->
+                <!-- Start Main Heading -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Your SaaS provider for customized solutions</h1>
+                    </div>
+                </div>
+                <!-- End Main Heading -->
+
+                <!-- Start Traning and placement Button -->
+                <!--<div class="row home-slider-buttons">
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Build now</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-outline-primary btn-lg btn-block">Xplore</button>
+                    </div>
+                    <div class="col-md-6 col-sm-0"></div>
+                </div>-->
+                <!-- Start Traning and placement Button -->
+            </div>
+            <!-- End Sub Heading, Heading, Buttons -->
+            <!-- Start Slider Image -->
+            <div class="col-md-4">
+                <div class="row slider-image">
+                    <div class="col-md-12">
+                        <img class="float-right img-fluid" src="{% static 'img/home-screen-header-image.png' %}" alt="img icon" />
+                    </div>
+                </div>
+            </div>
+            <!-- End Slider Image -->
+        </div>
+    </div>
+</div>
+{% endblock slider %}
+<!-- End Slider -->
+
+<!-- Start Main body -->
+{% block main_body %}
+<!-- Start heading snable-offer  -->
+<div class="row pl-5 pr-5 text-center heading-snable-offers">
+    <div class="col-md-12">
+        Uproot the traditional processes and choose the innovative solutions. Snable offers customized software solutions to meet the needs of MSME and other leading companies.
+    </div>
+</div>
+<!-- Start heading snable-offer  -->
+
+<!-- Start Your trusted SaaS Service Providers -->
+<div class="row pl-5 pr-5 text-center service-provider-heading">
+    <div class="col-md-12">
+        Your trusted SaaS Service Providers.
+    </div>
+</div>
+<!-- End Your trusted SaaS Service Providers -->
+
+<!-- Start Smart Daily deals add   -->
+<div class="row external-sdd">
+    <div class="col-md-12 pl-5 pr-5">
+        <div class="row smart-dailly-deals zoom">
+            <div class="col-sm-2 order-sm-1 "></div>
+
+            <!-- Start image -->
+            <div class="col-sm-3 order-sm-2 col-12 order-2">
+                <img src="{% static 'img/home-screen-1.png' %}" class="img-fluid" alt="" />
+            </div>
+            <!-- End  image -->
+
+            <div class="col-sm-1 order-sm-5 "></div>
+
+            <!-- start Content -->
+            <div class="col-sm-4 order-sm-6 col-12 order-1 sdd-content">
+                <!-- Start Heading -->
+                <div class="row heading">
+                    <div class="col-md-12 font-weight-bold">
+                        Smart Daily Deals
+                    </div>
+                </div>
+                <!-- End Heading -->
+                <!-- Start content -->
+                <div class="row content-1">
+                    <div class="col-md-12">
+                        Leading E-Commerce platform to deliver value with lifestyle products!
+                    </div>
+                </div>
+                <!-- End content -->
+                <!-- Start buttons -->
+                <div class="row sdd-button">
+                    <div class="col-md-4">
+                        <a href="https://smartdailydeals.in/" class="text-decoration-none" target="_blank">
+                            <button type="button" class="btn btn-primary btn-block">Explore</button>
+                        </a>
+                    </div>
+                    <div class="col-md-8"></div>
+                </div>
+                <!-- End buttons -->
+            </div>
+            <!-- End Content -->
+
+            <div class="col-sm-2 order-sm-10 col-0 order-0"></div>
+        </div>
+
+        <div class="row sdd-button-mobile-view">
+            <div class="col-md-12">
+                <a href="https://smartdailydeals.in/" class="text-decoration-none" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-block">Explore</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Smart Daily deals add -->
+
+<!-- Start Dining App -->
+<div class="row external-dining-app">
+    <div class="col-md-12 pl-5 pr-5">
+        <div class="row dining-app zoom">
+            <div class="col-md-2"></div>
+            <!-- Start Dining App Content -->
+            <div class="col-md-4">
+                <!-- Start Dianing App heading -->
+                <div class="row da-heading">
+                    <div class="col-md-12">
+                        Dining App
+                    </div>
+                </div>
+                <!-- End Dianing App heading -->
+
+                <!-- Start Dianing App sub heading -->
+                <div class="row da-sub-heading">
+                    <div class="col-md-12">
+                        Cloud Kitchen on your phone!
+                    </div>
+                </div>
+                <!-- End Dianing App sub heading -->
+
+                <!-- Start Dianing App content -->
+                <div class="row da-content">
+                    <div class="col-md-12">
+                        An app to meet all your dining needs in simple and a pragmatic manner.
+                    </div>
+                </div>
+                <!-- End Dianing App content -->
+
+                <!-- Start Dining app buttons -->
+                <div class="row da-button">
+                    <div class="col-md-5">
+                        <button type="button" class="btn btn-primary btn-block" disabled>Launching Soon</button>
+                    </div>
+                    <div class="col-md-7"></div>
+                </div>
+                <!-- End Dining app buttons -->
+            </div>
+            <!-- End Dining App Content -->
+            <div class="col-md-1"></div>
+            <!-- Start Dining App Image -->
+            <div class="col-md-3">
+                <img src="{% static 'img/home-screen-2.png' %}" class="img-fluid" alt="" />
+            </div>
+            <!-- End Dining App Image -->
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row dining-app-btn-mobile-view">
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-primary btn-block" disabled>Launching Soon</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Dining App Content -->
+
+<!-- Start Merchant Services -->
+<div class="row external-merchant-services">
+    <div class="col-md-12">
+        <div class="row pl-5 pr-5 merchant-services zoom">
+            <div class="col-sm-2 order-sm-1"></div>
+
+            <!-- Start Merchant Services Image -->
+            <div class="col-sm-3 order-sm-2 col-12 order-2">
+                <img src="{% static 'img/home-screen-3.png' %}" class="img-fluid" alt="" />
+            </div>
+            <!-- End Merchant Services Image -->
+
+            <div class="col-sm-1 order-sm-5"></div>
+
+            <!-- Start Merchant Services Content -->
+            <div class="col-sm-4 order-sm-6 col-12 order-1">
+                <!-- Start Merchant Services heading -->
+                <div class="row pt-3">
+                    <div class="col-md-12 ms-heading">
+                        Merchant Services
+                    </div>
+                </div>
+                <!-- End Merchant Services heading -->
+
+                <!-- Start Merchant Services content -->
+                <div class="row pt-3">
+                    <div class="col-md-12 ms-content">
+                        Your Merchant Service Providers for safe payments and secure accounts.
+                    </div>
+                </div>
+                <!-- End Merchant Services content -->
+
+                <!-- Start Merchant Services buttons -->
+                <div class="row pt-3 ms-button">
+                    <div class="col-md-5">
+                        <button type="button" class="btn btn-primary btn-block" disabled>Launching Soon</button>
+                    </div>
+                    <div class="col-md-7"></div>
+                </div>
+                <!-- End Merchant Services buttons -->
+            </div>
+            <!-- End Merchant Services Content -->
+
+            <div class="col-sm-2 order-sm-10">  </div>
+        </div>
+        <div class="row dining-app-btn-mobile-view">
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-primary btn-block" disabled>Launching Soon</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Merchant Services -->
+
+<!-- Start Logistic Servicses -->
+<!-- NOTE: Change virtual assitance to Logistic Servicses that's why all css wirtten in virtual assitance form. -->
+<div class="row">
+    <div class="col-md-12 external-virtual-assistance">
+        <div class="row pl-5 pr-5 virtual-assistance zoom">
+
+            <div class="col-md-2"></div>
+
+            <!-- Start Logistic Servicses Content -->
+            <div class="col-md-4">
+                <!-- Start Logistic Servicses Sub heading -->
+                <div class="row va-heading">
+                    <div class="col-md-12">
+                        Logistic Services
+                    </div>
+                </div>
+                <!-- End Virtual Assistance Sub heading -->
+
+                <!-- Start Virtual Assistance heading -->
+                <div class="row">
+                    <div class="col-md-12 va-content">
+                        Your Logistic Services: ready to work when you are, at prices you can live with.
+                    </div>
+                </div>
+                <!-- End Virtual Assistance heading -->
+
+                <!-- Start Virtual Assistance buttons -->
+                <div class="row va-button">
+                    <div class="col-md-5">
+                        <button type="button" class="btn btn-primary btn-block" disabled>Launching Soon</button>
+                    </div>
+                    <div class="col-md-7"></div>
+                </div>
+                <!-- End Virtual Assistance buttons -->
+            </div>
+            <!-- End Virtual Assistance Content -->
+
+            <div class="col-md-1"></div>
+
+            <!-- Start email marketing Image -->
+            <div class="col-md-3">
+                <img src="{% static 'img/home-screen-4.png' %}" class="img-fluid" alt="" />
+            </div>
+            <!-- End email marketing Image -->
+
+            <div class="col-md-2"></div>
+
+        </div>
+        <div class="row dining-app-btn-mobile-view">
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-primary btn-block" disabled>Launching Soon</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Logistic Servicses -->
+
+<!-- Start Our Bespoke Services for You -->
+<div class="row our-bespoke-services text-center">
+    <div class="col-md-12">
+        Bespoke Services on Command
+    </div>
+</div>
+<!-- End Our Bespoke Services for You -->
+
+<!-- Start Carosoul -->
+<div class="row carousel-row ">
+    <svg viewbox="0 0 1440 110" xmlns="http://www.w3.org/2000/svg" >
+        <style type="text/css">
+            .wave {
+              animation: wave 8s linear infinite;
+            }
+
+            .wave1 {
+              animation: wave1 10s linear infinite;
+            }
+
+            .wave2 {
+              animation: wave2 12s linear infinite;
+            }
+
+            @keyframes wave {
+              0% {
+                transform: translateX(0%);
+                transform: scaleY(.4) translateX(0%);
+              }
+
+              100% {
+                transform: translateX(100%);
+                transform: scaleY(.4) translateX(100%);
+              }
+            }
+
+            @keyframes wave1 {
+              0% {
+                transform: scaleY(.3) translateX(0%);
+              }
+
+              100% {
+                transform: scaleY(.3) translateX(100%);
+              }
+            }
+
+            @keyframes wave2 {
+              0% {
+                transform: scaleY(.2) translateX(0%);
+              }
+
+              100% {
+                transform: scaleY(.2) translateX(100%);
+              }
+            }
+          </style>
+        <defs>
+          <path id='sineWave' fill="#fff" fill-opacity="0.2" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+        </defs>
+<!--        &lt;!&ndash;<use class="wave" Y="0" href="#sineWave" />-->
+<!--        <use class="wave" x="-100%" Y="0" href="#sineWave" />&ndash;&gt;-->
+<!--        <use class="wave1" Y="3" href="#sineWave" />-->
+<!--        <use class="wave1" x="-100%" Y="3" href="#sineWave" />-->
+<!--        <use class="wave2" Y="7" href="#sineWave" />-->
+<!--        <use class="wave2" x="-100%" Y="7" href="#sineWave" />-->
+
+        <use class="wave" href="#sineWave" />
+        <use class="wave" x="-100%" href="#sineWave" />
+        <use class="wave1" href="#sineWave" />
+        <use class="wave1" x="-100%" href="#sineWave" />
+        <use class="wave2" href="#sineWave" />
+        <use class="wave2" x="-100%" href="#sineWave" />
+    </svg>
+    <div id="demo" class="carousel slide col-sm-12 col-md-12 col-xl-12" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <!-- Start Digital Marketing -->
+            <div class="carousel-item active">
+                <!-- <img src="la.jpg" alt="Los Angeles" width="1100" height="500"> -->
+                <div class="c-background"></div>
+                <div class="carousel-caption">
+                    <div class="row">
+                        <div class="col-sm-3 order-sm-1 col-12 order-2">
+                            <img class="img-fluid" src="{% static 'img/home-carousel-1.png'%}" alt="" />
+                        </div>
+                        <div class="col-sm-1 order-sm-4"></div>
+                        <div class="col-sm-8 order-sm-5 col-12 order-1">
+                            <div class="row c-dm-heading">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    Digital Marketing
+                                </div>
+                            </div>
+                            <div class="row c-dm-content">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    We make digital marketing simple. Your one-stop team to help your brand with holistic growth and sustainable development that takes your brand to different heights!
+                                </div>
+                            </div>
+                            <div class="row c-dm-button">
+                                <div class="col-md-3 col-12">
+                                    <button type="button" class="btn btn-primary  btn-block" data-target="#modal4" data-toggle="modal">Build now</button>
+                                </div>
+                                <div class="col-md-3 col-12">
+                                    <a href="{% url 'digitalmarketing' %}" class="text-decoration-none">
+                                        <button type="button" class="btn btn-outline-primary btn-block">Explore</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mobile-view-c-dm-button">
+                        <div class="col-md-12 col-12">
+                            <button type="button" class="btn btn-primary  btn-block" data-target="#modal4" data-toggle="modal">Build now</button>
+                        </div>
+                        <div class="col-md-12 col-12 pt-3">
+                            <a href="{% url 'digitalmarketing' %}" class="text-decoration-none">
+                                <button type="button" class="btn btn-outline-primary btn-block">Explore</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Digital marketing -->
+
+            <!-- Start Web App Development -->
+            <!-- Use same css for web app development like digital marketing -->
+            <div class="carousel-item">
+                <!-- <img src="chicago.jpg" alt="Chicago" width="1100" height="500"> -->
+                <div class="c-background"></div>
+                <div class="carousel-caption">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="row c-dm-heading">
+                                <div class="col-sm-12 col-md-12">
+                                    Web and app development
+                                </div>
+                            </div>
+                            <div class="row c-dm-content">
+                                <div class="col-sm-12 col-md-12">
+                                    Bring your idea to life and get set up for success! <br />
+                                    Product Engineering that brings your Idea to Executions. Seamless interface, beautiful dashboards, and integrated app/website.
+                                </div>
+                            </div>
+                            <div class="row c-dm-button">
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-primary  btn-block" data-target="#modal4" data-toggle="modal">Build now</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="{% url 'webappdevelopment' %}" class="text-decoration-none">
+                                        <button type="button" class="btn btn-outline-primary btn-block">Explore</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-3">
+                            <img class="img-fluid" src="{% static 'img/home-carousel-2.png' %}" alt="" />
+                        </div>
+                    </div>
+                    <div class="row mobile-view-c-dm-button">
+                        <div class="col-md-12 col-12">
+                            <button type="button" class="btn btn-primary  btn-block" data-target="#modal4" data-toggle="modal">Build now</button>
+                        </div>
+                        <div class="col-md-12 col-12 pt-3">
+                            <a href="{% url 'webappdevelopment' %}" class="text-decoration-none">
+                                <button type="button" class="btn btn-outline-primary btn-block">Explore</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Web App Development -->
+
+            <!-- Start Virtual assistance -->
+            <!-- Use same css like degital marketing     -->
+            <div class="carousel-item">
+                <!-- <img src="la.jpg" alt="Los Angeles" width="1100" height="500"> -->
+                <div class="c-background"></div>
+                <div class="carousel-caption">
+                    <div class="row">
+                        <div class="col-sm-3 order-sm-1 col-12 order-2">
+                            <img class="img-fluid" src="{% static 'img/home-carousel-3.png' %}" alt="" />
+                        </div>
+                        <div class="col-sm-1 order-sm-4"></div>
+                        <div class="col-sm-8 order-sm-5 col-12 order-1">
+                            <div class="row c-dm-heading">
+                                <div class="col-sm-12 col-md-12">
+                                    Virtual Assistance
+                                </div>
+                            </div>
+                            <div class="row c-dm-content">
+                                <div class="col-sm-12 col-md-12">
+                                    Your top pick for its reasonable price, the ability to carry over unused hours, the breadth of skill set, and the executive team's commitment to innovation.
+                                </div>
+                            </div>
+                            <div class="row c-dm-button">
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-primary btn-block" data-target="#modal4" data-toggle="modal">Build now</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="{% url 'virtualassistance' %}" class="text-decoration-none">
+                                        <button type="button" class="btn btn-outline-primary btn-block ">Explore</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mobile-view-c-dm-button">
+                        <div class="col-md-12 col-12">
+                            <button type="button" class="btn btn-primary  btn-block" data-target="#modal4" data-toggle="modal">Build now</button>
+                        </div>
+                        <div class="col-md-12 col-12 pt-3">
+                            <a href="{% url 'virtualassistance' %}" class="text-decoration-none">
+                                <button type="button" class="btn btn-outline-primary btn-block">Explore</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Virtual assistance -->
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </a>
+    </div>
+</div>
+<!-- End Carosoul -->
+{% endblock main_body %}
+<!-- End Main body -->
+
+

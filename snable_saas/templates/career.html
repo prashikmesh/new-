@@ -1,0 +1,75 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}
+<title>Career</title>
+{% endblock title %}
+
+<!-- Own Home Screen CSS -->
+<!-- Create new about us css and add in static folder-->
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/home-screen.css' %}" />
+<link rel="stylesheet" href="{% static 'css/career.css' %}" />
+{% endblock own_css %}
+<!-- Own Home Screen CSS -->
+
+<!-- Start Slider -->
+{% block slider %}
+<div class="row slider pl-5 pr-5">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <!-- Start Slider Heading -->
+            <div class="col-md-2 col-12 slider-heading">
+                <h1>Career</h1>
+            </div>
+            <!-- Start Slider Heading -->
+            <!-- Start Slider Image -->
+            <div class="col-md-7 col-12">
+                <img src="{% static 'img/career-slider-image.png'%}" alt="snable" class="img-fluid">
+            </div>
+            <!-- End Slider Image -->
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+{% endblock slider %}
+<!-- End Slider -->
+
+<!-- Start Main body -->
+{% block main_body %}
+
+<!-- Start positions tables -->
+{% for i in result %}
+<div class="row">
+    <div class="col-md-12 career-content">
+            <!-- Start career post heading -->
+            <div class="row career-post-heading">
+                <div class="col-md-12">
+                    {{ forloop.counter }}. {{i.position}}
+                </div>
+            </div>
+            <!-- End career post heading -->
+
+            <!-- Start career post description's -->
+            <div class="row career-post-description">
+                <div class="col-md-12">
+                    {{i.description | safe}}
+                </div>
+            </div>
+            <!-- End career post description's -->
+
+            <!-- Start career apply button's -->
+            <div class="row career-apply-button">
+                <div class="col-md-2 ">
+                    <button type="button" class="btn btn-primary btn-sm btn-block" data-target="#modal_career" data-toggle="modal">Apply</button>
+                </div>
+            </div>
+            <!-- End career apply button's -->
+    </div>
+</div>
+{% endfor %}
+<!-- End positions contents -->
+
+{% endblock main_body %}
+<!-- End Main body -->

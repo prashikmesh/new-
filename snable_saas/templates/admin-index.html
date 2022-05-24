@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        {% block title %}
+        <title>Admin Index</title>
+        {% endblock title %}
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+        <!-- jQuery Library -->
+        <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+        <!-- bootstrap min.js -->
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <!-- Font awsome icon online library -->
+        <script src="https://kit.fontawesome.com/c857374f8d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container border border-primary">
+            <!-- Start Heading-->
+            <div class="row text-center pt-3 text-primary">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                   <h1>
+                       Hello Admin
+                   </h1>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <!-- End Heading -->
+
+            <!-- Start Log out Button-->
+            <div class="row text-center pt-3 text-primary">
+                <div class="col-md-12">
+                    <a href="{% url 'admin_logout' %}">Log Out....</a>
+                </div>
+            </div>
+            <!-- End Log out Button-->
+
+            <!-- Start Contact table buttons -->
+            <div class="row text-center pt-4 text-primary">
+                <div class="col-md-2"></div>
+
+                <!-- Start General Contact Buttons -->
+                <div class="col-md-2">
+                    <a href="{% url 'admin_panel_general_contact' %}">
+                        <button type="button" class="btn btn-info btn-block">General Contact</button>
+                    </a>
+                </div>
+                <!-- End General Contact Buttons -->
+
+                <!-- Start Student Contact Buttons -->
+                <div class="col-md-2">
+                    <a href="{% url 'admin_panel_student_contact' %}">
+                        <button type="button" class="btn btn-info btn-block">Student Contact</button>
+                    </a>
+                </div>
+                <!-- End Student Contact Buttons -->
+
+                <!-- Start Post Blog Buttons -->
+                <div class="col-md-2">
+                    <a href="{% url 'admin_blog_dashboard' %}">
+                        <button type="button" class="btn btn-info btn-block">Post Blog</button>
+                    </a>
+                </div>
+                <!-- End Post Blog Buttons -->
+
+                <!-- Start Career Buttons -->
+                <div class="col-md-2">
+                    <a href="{% url 'career_home_page' %}">
+                        <button type="button" class="btn btn-info btn-block">Career</button>
+                    </a>
+                </div>
+                <!-- End Career Buttons -->
+
+                <div class="col-md-2"></div>
+            </div>
+            <!-- End Contact table buttons -->
+
+            <!-- Start bootstrap table -->
+            {% block bs_table %}
+            hii
+            {% endblock bs_table %}
+            <!-- End bootstrap table -->
+
+        </div>
+        <script>
+            // Disable form submissions if there are invalid fields
+            (function () {
+                "use strict";
+                window.addEventListener(
+                    "load",
+                    function () {
+                        // Get the forms we want to add validation styles to
+                        var forms = document.getElementsByClassName("needs-validation");
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function (form) {
+                            form.addEventListener(
+                                "submit",
+                                function (event) {
+                                    if (form.checkValidity() === false) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                    }
+                                    form.classList.add("was-validated");
+                                },
+                                false
+                            );
+                        });
+                    },
+                    false
+                );
+            })();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+{% extends 'index.html' %} {% load static %} {% block title %}
+<title>404 Page Not Found</title>
+{% endblock title %}
+
+<!-- Own Home Screen CSS -->
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/home-screen.css' %}" />
+<link rel="stylesheet" href="{% static 'css/error-page.css' %}" />
+{% endblock own_css %}
+
+<!-- Start Slider -->
+{% block slider %}
+
+{% endblock slider %}
+<!-- End Slider -->
+
+<!-- Start Main body -->
+{% block main_body %}
+<div class="row">
+    <div class="col-md-12 error">
+        <div class="row">
+            <div class="col-md-12 error-body">
+                <!-- Start Error Heading -->
+                <div class="row">
+                    <div class="col-md-12 error-heading">
+                        404
+                    </div>
+                </div>
+                <!-- End Error Heading -->
+                <!-- Start Error Sub Heading -->
+                <div class="row">
+                    <div class="col-md-12 error-subheading">
+                        Page Not Found
+                    </div>
+                </div>
+                <!-- End Error Sub Heading -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main_body %}
+<!-- End Main body -->
+
+

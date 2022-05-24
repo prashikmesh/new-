@@ -1,0 +1,567 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url('Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url('Nunito-VariableFont_wght.ttf');
+}
+
+:root
+{
+    --color-text-1:#3F4C6E;    
+    --color-text-2:#5D636E;
+    --color-text-4:#fff;
+    --font-family-q-sand :"Quicksand";
+    --font-family-nunito :"Nunito";
+}
+
+.header-navigation
+{   
+    background-image: linear-gradient(to top right, rgb(99,49,148,1), rgb(107,140,222,0));
+    padding-left: 0px;
+    padding-right: 0px;      
+}
+
+.slider{
+    padding-top: 70px;
+}
+
+.slider .s-b-headline
+{
+    font-family: var(--font-family-nunito);
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-text-4);
+    padding-top:175px;
+}
+
+.slider .home-main-heading .home-slider-buttons
+{
+    padding-top : 50px;
+}
+
+.main-body .heading-snable-offers
+{
+    font-family: var(--font-family-nunito);
+    font-size: 24px;
+    padding-top: 50px;
+    color: var(--color-text-2);
+}
+
+
+.main-body .service-provider-heading
+{
+    font-size: 52px;
+    color: var(--color-text-1);
+    font-weight: 500;
+    font-family: var(--font-family-q-sand);
+    padding-top: 100px;
+}
+
+.main-body .smart-dailly-deals
+{
+    padding-top: 70px;
+}
+
+.main-body .smart-dailly-deals .sdd-content
+{
+    padding-top: 90px;
+}
+
+.main-body .smart-dailly-deals .sdd-content .heading
+{
+    font-size: 48px;
+    font-family: var(--font-family-q-sand);
+    color:var(--color-text-1);
+    font-weight:500;
+}
+
+.main-body .smart-dailly-deals .sdd-content .content-1
+{
+    font-family: var(--font-family-nunito);
+    font-size: 32px;
+    font-weight: 400;
+    padding-top: 40px;
+    color:var(--color-text-1);
+}
+
+.main-body .smart-dailly-deals .sdd-content .sdd-button
+{
+    padding-top: 45px;
+}
+
+
+.main-body .external-dining-app,
+.main-body .external-merchant-services,
+.main-body .external-virtual-assistance
+{
+    padding-top:175px;
+}
+
+.main-body .dining-app,
+.main-body .merchant-services,
+.main-body .virtual-assistance
+{
+    /*background-image: linear-gradient(to top right, rgba(131,105,181,1), rgba(107,140,222,1));
+    border-radius:30px;*/
+}
+
+
+
+.main-body .dining-app .da-sub-heading,
+.main-body .merchant-services .ms-sub-heading,
+.main-body .virtual-assistance .va-sub-heading
+{
+    font-size: 32px;
+    color:var(--color-text-2);
+    font-family: var(--font-family-nunito);
+    color: var(--color-text-1);
+    padding-top:40px;
+}
+
+.main-body .dining-app .da-heading,
+.main-body .merchant-services .ms-heading,
+.main-body .virtual-assistance .va-heading
+{
+    font-size: 48px;
+    font-family: var(--font-family-q-sand);
+    font-weight: 500;
+    color: var(--color-text-1);
+    padding-top:30px;
+}
+
+.main-body .dining-app .da-content,
+.main-body .merchant-services .ms-content,
+.main-body .virtual-assistance .va-content
+{
+    font-size: 28px;
+    font-family: var(--font-family-nunito);
+    color: var(--color-text-2);
+    font-weight: 400;
+     padding-top: 10px;
+    font-weight: normal;
+}
+
+.main-body .dining-app .da-sub-heading,
+.main-body .merchant-services .ms-heading,
+.main-body .virtual-assistance .va-heading
+{
+    /*padding-top:120px;*/
+
+}
+
+.main-body .dining-app .da-button,
+.main-body .merchant-services .ms-button,
+.main-body .virtual-assistance .va-button
+{
+    padding-top: 45px;
+}
+
+
+
+.main-body .our-bespoke-services
+{
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--color-text-1);
+    padding-top: 220px;
+}
+
+.main-body .bs-s-button
+{
+    padding-top: 50px;
+}
+
+.main-body .carousel-row
+{
+     background-image: linear-gradient(to top left, rgb(99,49,148,1), rgb(226,226,226,1));
+     padding-bottom:25px;
+}
+
+.main-body .carousel
+{
+   /* padding-top: 60px;*/
+}
+
+.main-body .carousel-inner .carousel-item .c-background
+{
+
+    height: 375px;
+    width: 100%;
+}
+
+.main-body .carousel-inner .carousel-item .carousel-caption
+{
+    color: var(--color-text-1)
+}
+
+.main-body .carousel-inner .carousel-item .carousel-caption .c-dm-heading
+{
+    font-family: var(--font-family-q-sand);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    color: var(--color-text-4);
+    text-align: left;
+}
+
+.main-body .carousel-inner .carousel-item .carousel-caption .c-dm-content
+{
+    font-family: var(--font-family-nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 145%;
+    color: var(--color-text-4);
+    padding-top: 21px;
+    text-align: left;
+}
+
+.main-body .carousel-inner .carousel-item .carousel-caption .c-dm-button
+{
+    padding-top:54px;
+}
+
+.main-body a i
+{
+ /*   color: #7997E2;*/
+ font-size:35px;
+
+}
+
+.carousel-indicators
+{
+    bottom:-20px;
+}
+
+
+/* Start carousel-wave-animation */
+
+/* End carousel-wave-animation */
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    /*background-color: #7997E2;*/
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+
+
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+
+/* Start zoom */
+.zoom {
+  transition: transform 0.9s; /* Animation */
+}
+
+.zoom:hover
+{
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  /*opacity: 1;*/
+  transition: 0.9s;
+
+}
+/* End zoom */
+
+@media all and (min-width: 361px) {
+
+    .external-sdd .sdd-button-mobile-view
+    {
+        visibility: hidden;
+    }
+
+    .external-dining-app  .dining-app-btn-mobile-view,
+    .external-merchant-services  .dining-app-btn-mobile-view,
+    .external-virtual-assistance .dining-app-btn-mobile-view
+    {
+        visibility:hidden;
+    }
+
+    .mobile-view-c-dm-button
+    {
+        display:none;
+    }
+}
+
+/* Start Mobile view css */
+@media all and (max-width: 360px) {
+    .header-navigation
+    {
+        background-image: linear-gradient(rgba(107,140,222,45%), rgba(99,49,148,75%));
+    }
+    .slider
+    {
+        padding-top:22px;
+    }
+
+    .slider .s-b-headline
+    {
+        font-family: var(--font-family-nunito);
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--color-text-4);
+        padding-top: 7px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    h1
+    {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    /*.waves
+    {
+        visibility: hidden;
+    }*/
+
+    .main-body .heading-snable-offers
+    {
+        padding-top: 10px;
+
+        font-style: normal;
+        font-family: var(--font-family-nunito);
+        font-size: 16px;
+        color: var(--color-text-2);
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .main-body .service-provider-heading
+    {
+        padding-top: 20px;
+        padding-bottom:20px;
+        font-family: var(--font-family-q-sand);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        color: var(--color-text-1);
+    }
+
+    .external-sdd
+    {
+
+        background-image: linear-gradient(rgba(99,49,148,53%), rgba(107,140,222,83%));
+    }
+
+    .main-body .smart-dailly-deals
+    {
+       padding-top:20px;
+    }
+
+    .main-body .smart-dailly-deals .sdd-content
+    {
+        padding-top: 21px;
+    }
+
+    .main-body .smart-dailly-deals .sdd-content .heading
+    {
+        font-family: var(--font-family-q-sand);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        color: var(--color-text-4);
+        text-align:center;
+    }
+
+    .main-body .smart-dailly-deals .sdd-content .content-1
+    {
+        padding-top: 40px;
+        font-family: var(--font-family-nunito);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 145%;
+        text-align: center;
+        color: var(--color-text-4);
+    }
+
+    .main-body .smart-dailly-deals .sdd-content .sdd-button
+    {
+        padding-top: 10px;
+        visibility: hidden;
+    }
+
+    .external-sdd .sdd-button-mobile-view
+    {
+        padding-top:16px;
+        padding-bottom:40px;
+
+    }
+
+    .main-body .external-dining-app,
+    .main-body .external-merchant-services,
+    .main-body .external-virtual-assistance
+    {
+        padding-top: 0px;
+    }
+
+    .main-body .dining-app .da-heading,
+    .main-body .merchant-services .ms-heading,
+    .main-body .virtual-assistance .va-heading
+    {
+        padding-top: 22px;
+        font-family: var(--font-family-q-sand);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        color: var(--color-text-1);
+        text-align:center;
+    }
+
+    .main-body .dining-app .da-sub-heading,
+    .main-body .merchant-services .ms-heading,
+    .main-body .virtual-assistance .va-heading
+    {
+         padding-top: 4px;
+    }
+
+    .main-body .dining-app .da-sub-heading,
+    .main-body .merchant-services .ms-sub-heading,
+    .main-body .virtual-assistance .va-sub-heading
+    {
+        padding-top:4px;
+        font-family: var(--font-family-nunito);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 145%;
+        color: var(--color-text-1);
+        text-align:center;
+    }
+
+    .main-body .dining-app .da-content,
+    .main-body .merchant-services .ms-content,
+    .main-body .virtual-assistance .va-content
+    {
+        font-family: var(--font-family-nunito);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 145%;
+        text-align: center;
+        color: var(--color-text-2);
+    }
+
+    .external-dining-app  .dining-app-btn-mobile-view,
+    .external-merchant-services  .dining-app-btn-mobile-view,
+    .external-virtual-assistance .dining-app-btn-mobile-view
+    {
+        padding-top:40px;
+        padding-bottom:40px;
+    }
+
+    .main-body .dining-app .da-button,
+    .main-body .merchant-services .ms-button,
+    .main-body .virtual-assistance .va-button
+    {
+        padding-top: 0px;
+        visibility:hidden;
+    }
+
+    .main-body .our-bespoke-services
+    {
+        padding-top: 0px;
+        font-family: var(--font-family-q-sand);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--color-text-1);
+        padding-bottom:40px;
+    }
+
+    .main-body .carousel-row svg
+    {
+        visibility:hidden;
+    }
+
+    .main-body .carousel-row
+    {
+        background-image: linear-gradient(180deg, rgba(99, 49, 148, 0.53) 0%, rgba(107, 140, 222, 0.83) 96.57%);
+        padding-bottom: 25px;
+    }
+
+    .main-body .carousel-inner .carousel-item .carousel-caption .c-dm-heading
+    {
+        font-family: var(--font-family-q-sand);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        color: var(--color-text-4);
+    }
+
+    .main-body .carousel-inner .carousel-item .carousel-caption .c-dm-content
+    {
+        font-family: var(--font-family-nunito);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 145%;
+        text-align: center;
+        color: var(--color-text-4);
+    }
+
+    .main-body .carousel-inner .carousel-item .c-background
+    {
+        height: 610px;
+        width: 100%;
+    }
+
+    .main-body .carousel-inner .carousel-item .carousel-caption .c-dm-button
+    {
+        display:none;
+    }
+}
+
+/* End Mobile view css */

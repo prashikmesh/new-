@@ -1,0 +1,281 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}
+<title>Digital Marketing</title>
+{% endblock title %}
+
+<!-- Own Home Screen CSS -->
+{% block own_css %}
+<!-- own common CSS fro Digital marketing, Virtual Assistance, Web and App Draft -->
+<link rel="stylesheet" href="{% static 'css/common-css-dm-va-wad.css' %}" />
+<!-- own DM CSS -->
+<link rel="stylesheet" href="{% static 'css/digital-marketing.css' %}" />
+{% endblock own_css %}
+
+<!-- Start Slider -->
+{% block slider %}
+
+<div class="row slider pl-5 pr-5">
+    <div class="col-md-12">
+        <div class="row">
+            <!-- Start Sub Heading, Heading, Buttons -->
+            <div class="col-md-5 slider-heading-button">
+                <!-- Start Main Heading -->
+                <div class="row slider-heading">
+                    <div class="col-md-12">
+                        <h1>Digital Marketing</h1>
+                    </div>
+                </div>
+                <!-- End Main Heading -->
+                <!-- Start Traning and placement Button -->
+                <div class="row slider-button">
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-primary btn-block btn-lg" data-target="#modal4" data-toggle="modal">Contact now</button>
+                    </div>
+                    <div class="col-md-8"></div>
+                </div>
+                <!-- Start Traning and placement Button -->
+            </div>
+            <!-- End Sub Heading, Heading, Buttons -->
+            <div class="col-md-3"></div>
+            <!-- Start Slider Image -->
+            <div class="col-md-4">
+                <div class="row slider-image">
+                    <div class="col-md-12">
+                        <img class="float-right img-fluid" src="{% static 'img/dm-header-image.png' %}" alt="img icon" />
+                    </div>
+                </div>
+            </div>
+            <!-- End Slider Image -->
+        </div>
+        <div class="row mobile-view-slider-button">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary btn-block" data-target="#modal4" data-toggle="modal">Contact now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock slider %}
+<!-- End Slider -->
+
+<!-- Start Main body -->
+{% block main_body %}
+
+<!-- Start Our Bespoke Service for You -->
+<div class="row text-center our-services-tagline">
+    <div class="col-md-12">
+        Our Bespoke Service for You
+    </div>
+</div>
+<!-- End Our Bespoke Service for You -->
+
+<!-- Start Buttons -->
+<div class="row pl-5 pr-5 d-flex justify-content-center services-btn">
+    <div class="col-md-3">
+        <a href="{% url 'digitalmarketing' %}" class="text-decoration-none">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Digital Marketing</button>
+        </a>
+    </div>
+
+    <div class="col-md-3">
+        <a href="{% url 'webappdevelopment' %}" class="text-decoration-none">
+            <button type="button" class="btn btn-outline-secondary btn-lg btn-block">Web & App Development</button>
+        </a>
+    </div>
+
+    <div class="col-md-3">
+        <a href="{% url 'virtualassistance' %}" class="text-decoration-none">
+            <button type="button" class="btn btn-outline-secondary btn-lg btn-block">Virtual Assistance</button>
+        </a>
+    </div>
+</div>
+
+<div class="row pl-5 pr-5 mobile-view-services-btn">
+    <div class="col-md-12">
+        <div class="row ser-btn">
+            <div class="col-md-12 p-0">
+                <a href="{% url 'digitalmarketing' %}" class="text-decoration-none">
+                    <button type="button" class="btn btn-primary btn-block">Digital Marketing</button>
+                </a>
+            </div>
+        </div>
+        <div class="row ser-btn">
+            <div class="col-md-12 p-0">
+                <a href="{% url 'webappdevelopment' %}" class="text-decoration-none">
+                    <button type="button" class="btn btn-outline-secondary btn-block">Web & App Development</button>
+                </a>
+            </div>
+        </div>
+        <div class="row ser-btn">
+            <div class="col-md-12 p-0">
+                <a href="{% url 'virtualassistance' %}" class="text-decoration-none">
+                    <button type="button" class="btn btn-outline-secondary btn-block">Virtual Assistance</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Buttons -->
+
+<!-- Start Social Media Marketing -->
+<div class="row pl-5 pr-5 s-m-marketing">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-1 order-sm-1"></div>
+            <!-- Start Image -->
+            <div class="col-sm-4 order-sm-2 col-12 order-2">
+                <img src="{% static 'img/dm-1.png' %}" class="img-fluid" alt="" />
+            </div>
+            <!-- End Image -->
+            <div class="col-sm-1 order-sm-6"></div>
+            <!-- Start Content -->
+            <div class="col-sm-5 order-sm-7 col-12 order-1 s-m-marketing-heading-content-btn">
+                <div class="row">
+                    <div class="col-md-12 s-m-marketing-heading">
+                        Social Media Marketing
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 s-m-marketing-content">
+                        <ul class="list-group">
+                            <li class="">Designing Social Media Campaienge</li>
+                            <li class="">Creating & Managing Social Media Accounts for Facebook, Instagram, LinkedIn, YouTube & Pintrest</li>
+                            <li class="">Managing Facebook groups</li>
+                            <li class="">Creating Post, Stories, Ads for all Social Media</li>
+                            <li class="">Creating social media polls</li>
+                            <li class="">Managing Facebook groups</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row s-m-marketing-btn">
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-primary btn-block"  data-target="#modal4" data-toggle="modal">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Content -->
+            <div class="col-sm-1 order-sm-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 mobile-view-s-m-marketing-btn">
+                <div class="row mobile-view-sm-btn">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-primary btn-block btn-sm" data-target="#modal4" data-toggle="modal">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Social Media Marketing -->
+
+<!-- Start Email Marketing -->
+<!-- Use above css of social media marketing in email marketing -->
+<div class="row pl-5 pr-5 s-m-marketing">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <!-- Start End Content -->
+            <div class="col-md-5 s-m-marketing-heading-content-btn">
+                <div class="row">
+                    <div class="col-md-12 s-m-marketing-heading">
+                        Email Marking
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 s-m-marketing-content">
+                        <ul class="list-group">
+                            <li class="">Email Marketing</li>
+                            <li class="">Email Sales Marketing</li>
+                            <li class="">Survey</li>
+                            <li class="">Company Newsletter</li>
+                            <li class="">Connect-via-Social Campaign</li>
+                            <li class="">Re-Engagement Campaign</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row s-m-marketing-btn">
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-primary btn-block"  data-target="#modal4" data-toggle="modal">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Content -->
+            <div class="col-md-1"></div>
+            <!-- Start email marketing Image -->
+            <div class="col-md-4">
+                <img src="{% static 'img/dm-2.png' %}" class="img-fluid" alt="" />
+            </div>
+            <!-- End email marketing Image -->
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 mobile-view-s-m-marketing-btn">
+                <div class="row mobile-view-sm-btn">
+                   <div class="col-md-12">
+                        <button type="button" class="btn btn-primary btn-block btn-sm" data-target="#modal4" data-toggle="modal">Get Quote</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Email Marketing -->
+
+<!-- Start SEO -->
+<!-- Use above css of social media marketing in email marketing -->
+<div class="row pl-5 pr-5 s-m-marketing">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-1 order-sm-1"></div>
+            <!-- Start SEO Image -->
+            <div class="col-sm-4 order-sm-2 col-12 order-2">
+                <img src="{% static 'img/dm-3.png' %}" class="img-fluid" alt="" />
+            </div>
+            <!-- End SEO Image -->
+            <div class="col-sm-1 order-sm-6"></div>
+            <!-- Start SEO Content -->
+            <div class="col-sm-5 order-sm-7 col-12 order-1 s-m-marketing-heading-content-btn">
+                <div class="row">
+                    <div class="col-md-12 s-m-marketing-heading">
+                        SEO
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 s-m-marketing-content">
+                        <ul class="list-group">
+                            <li class="">Analytics reporting (Google Analytics, email, social media, etc)</li>
+                            <li class="">Technical SEO</li>
+                            <li class="">On-Page SEO</li>
+                            <li class="">Off-Page SEO</li>
+                            <li class="">Organice SEO</li>
+                            <li class="">Voice SEO</li>
+                            <li class="">Search Engine Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row s-m-marketing-btn">
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-primary btn-block"  data-target="#modal4" data-toggle="modal">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End SEO Content -->
+            <div class="col-sm-1 order-sm-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 mobile-view-s-m-marketing-btn">
+                <div class="row mobile-view-sm-btn">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-primary btn-block btn-sm" data-target="#modal4" data-toggle="modal">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End SEO -->
+
+{% endblock main_body %}
+<!-- End Main body -->

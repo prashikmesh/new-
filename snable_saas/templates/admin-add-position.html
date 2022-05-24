@@ -1,0 +1,47 @@
+{% extends 'admin-career-dashboard.html' %}
+{% load static %}
+{% block title %}
+<title>Add Positions</title>
+{% endblock title %}
+
+
+{% block position_admin_tab %}
+
+<!-- Start Heading -->
+<div class="row">
+    <div class="col-md-12 text-primary">
+        <h5>Add Position</h5>
+    </div>
+</div>
+<!-- End Heading -->
+
+<!-- Start Form -->
+<div class="row">
+    <div class="col-md-6">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.media }}
+            <!-- Start Position -->
+            <div class="form-group">
+                <label>Title:</label>
+                {{form.position}}
+            </div>
+            <!-- End Position -->
+            <!-- Start Description -->
+            <div class="form-group">
+                <label>Description:</label>
+                {{form.description}}
+            </div>
+            <!-- End Description -->
+            <!-- Start Status -->
+            <div class="form-group">
+                <label>Body:</label>
+                {{form.status}}
+            </div>
+            <!-- End Status -->
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+<!-- End Form -->
+{% endblock position_admin_tab %}

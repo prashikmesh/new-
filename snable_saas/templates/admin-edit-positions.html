@@ -1,0 +1,52 @@
+{% extends 'admin-career-dashboard.html' %}
+{% load static %}
+{% block title %}
+<title>Edit Position</title>
+{% endblock title %}
+
+
+{% block position_admin_tab %}
+
+<!-- Start Heading -->
+<div class="row">
+    <div class="col-md-12 text-primary">
+        <h5>Edit Positions</h5>
+        {{id}}
+    </div>
+</div>
+<!-- End Heading -->
+
+<!-- Start Form -->
+<div class="row">
+    <div class="col-md-6">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.media }}
+            <!-- Start Title -->
+            <div class="form-group">
+                <label>Position:</label>
+                {{form.position}}
+            </div>
+            <!-- Start Title -->
+            <!-- Start Description -->
+            <div class="form-group">
+                <label>Description:</label>
+                {{form.description}}
+            </div>
+            <!-- Start Description -->
+            <!-- Start body -->
+            <div class="form-group">
+                <label>Status:</label>
+                {{form.status}}
+            </div>
+            <!-- Start body -->
+          <button type="submit" class="btn btn-primary">Submit</button>
+
+            <a href="{% url 'show_all_positions' %}">
+                <button class="btn btn-primary">Positions</button>
+            </a>
+        </form>
+    </div>
+</div>
+<!-- End Form -->
+{% endblock position_admin_tab %}

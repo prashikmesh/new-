@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url('Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url('Nunito-VariableFont_wght.ttf');
+}
+
+
+:root
+{
+    --color-text-1:#3F4C6E;
+    --color-text-2:#5D636E;
+    --color-text-4:#fff;
+    --font-family-q-sand :"Quicksand";
+    --font-family-nunito :"Nunito";
+}
+
+.header-navigation
+{
+    background: linear-gradient(72.56deg, #633194 -5.33%, rgba(107, 140, 222, 0.06) 92.53%);
+}
+
+.slider {
+    padding-top: 70px;
+}
+
+.slider .slider-heading-content-buttons {
+    padding-top: 15px;
+}
+
+.main-body .heading-program-overview
+{
+    font-family: var(--font-family-q-sand);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 65px;
+    color: var(--color-text-1);
+    padding-top:48px;
+}
+
+.main-body .subheading-key-highlights
+{
+    font-family: var(--font-family-q-sand);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--color-text-1);
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.main-body .program-overview-content
+{
+    font-family: var(--font-family-nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 145%;
+    color: var(--color-text-2);
+}
+
+.main-body .heading-tools-covered-design
+{
+    font-family: var(--font-family-q-sand);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 65px;
+    color: var(--color-text-1);
+    padding-top:100px;
+    padding-bottom:40px;
+}
+
+.main-body .tools-icon-content
+{
+    font-family: var(--font-family-nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 145%;
+    text-align:center;
+    color: var(--color-text-2);
+    padding-top:20px;
+}
+
+.main-body .description
+{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: var(--color-text-1);
+    padding-top:80px;
+}
+
+.main-body .description-content
+{
+    font-family: var(--font-family-nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 145%;
+    color: var(--color-text-2);
+    padding-top:20px;
+}
+

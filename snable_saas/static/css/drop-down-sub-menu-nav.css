@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url('Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url('Nunito-VariableFont_wght.ttf');
+}
+
+
+:root
+{
+    --color-text-1:#3F4C6E;
+    --color-text-2:#5D636E;
+    --color-text-4:#fff;
+    --font-family-q-sand :"Quicksand";
+    --font-family-nunito :"Nunito";
+}
+
+
+.menu-item:hover > .dropdown-menu
+        {
+            display: block;
+        }
+
+        /* makes sub-menu S open on hover */
+        .submenu-item:hover > .dropdown-menu
+        {
+        display: inline;
+        }
+
+
+
+.dropdown-menu .services-heading
+{
+    
+    font-family: var(--font-family-q-sand);
+    font-size: 28PX;
+    font-weight: bolder;
+    color: var(--color-text-1);
+    padding-bottom: 30px;
+}
+
+
+
+.submenu-item .dropdown-menu
+{
+    background-image: linear-gradient(to top right, rgb(108,141,222,1), rgb(99,49,148,0.4));
+}
+
+.submenu-item .dropdown-menu a
+{
+    border: 0px;
+    color: var(--color-text-4);
+}

@@ -1,0 +1,41 @@
+/* Satart icon side bar CSS */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    transition: all 0.3s ease;
+    /* color: white; */
+    font-size: 20px;
+    /* border-radius: 50%; */
+    margin-top: 10px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #3F4C6E;
+    border-color: #3F4C6E;
+    color:#fff;
+  }
+  
+  .facebook, .twitter, .instagram, .linkedin
+   {
+    /* background: #3B5998; */
+    border: 1px solid #3F4C6E;
+    color: #3F4C6E;
+  }
+  
+
+  
+  .content {
+    margin-left: 75px;
+    font-size: 30px;
+  }
+/* End icon side bar CSS */

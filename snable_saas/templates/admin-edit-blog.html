@@ -1,0 +1,52 @@
+{% extends 'admin-blog-dashboard.html' %}
+{% load static %}
+{% block title %}
+<title>Edit Blog</title>
+{% endblock title %}
+
+
+{% block blog_admin_tab %}
+
+<!-- Start Heading -->
+<div class="row">
+    <div class="col-md-12 text-primary">
+        <h5>Edit Blog</h5>
+        {{id}}
+    </div>
+</div>
+<!-- End Heading -->
+
+<!-- Start Form -->
+<div class="row">
+    <div class="col-md-6">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.media }}
+            <!-- Start Title -->
+            <div class="form-group">
+                <label>Title:</label>
+                {{form.title}}
+            </div>
+            <!-- Start Title -->
+            <!-- Start Description -->
+            <div class="form-group">
+                <label>Description:</label>
+                {{form.description}}
+            </div>
+            <!-- Start Description -->
+            <!-- Start body -->
+            <div class="form-group">
+                <label>Body:</label>
+                {{form.body}}
+            </div>
+            <!-- Start body -->
+          <button type="submit" class="btn btn-primary">Submit</button>
+
+            <a href="{% url 'view_all_blog' %}">
+                <button class="btn btn-primary">Blogs</button>
+            </a>
+        </form>
+    </div>
+</div>
+<!-- End Form -->
+{% endblock blog_admin_tab %}

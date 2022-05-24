@@ -1,0 +1,52 @@
+{% extends 'admin-career-dashboard.html' %}
+{% load static %}
+{% block title %}
+<title>All Applications</title>
+{% endblock title %}
+
+
+{% block position_admin_tab %}
+
+<!-- Start Heading -->
+<div class="row">
+    <div class="col-md-12 text-primary">
+        <h5>All Applications</h5>
+    </div>
+</div>
+<!-- End Heading -->
+
+<!-- Start content -->
+<div class="row pt-4">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>#</th>
+                  <th>Full Name</th>
+                  <th>Email</th>
+                  <th>Mobile Number</th>
+                  <th>Position Applied For</th>
+                  <th>CV</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for i in result %}
+                <tr>
+                  <td>{{ i.id }}</td>
+                  <td>{{ i.full_name }}</td>
+                  <td>{{ i.email }}</td>
+                  <td>{{ i.number }}</td>
+                  <td>{{ i.position_applied_for }}</td>
+                  <td>
+                      <a href="{{i.uploaded_cv.url}}" target="_blank">view</a>
+                  </td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- End Content -->
+{% endblock position_admin_tab %}

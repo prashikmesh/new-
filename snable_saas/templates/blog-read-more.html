@@ -1,0 +1,175 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}
+<title>Blog Main Page</title>
+{% endblock title %}
+
+<!-- Own Home Screen CSS -->
+<!-- Create new about us css and add in static folder-->
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/home-screen.css' %}" />
+<link rel="stylesheet" href="{% static 'css/blogs-read-more.css' %}" />
+{% endblock own_css %}
+<!-- Own Home Screen CSS -->
+
+
+
+<!-- Start Slider -->
+{% block slider %}
+<div class="row slider pl-5 pr-5">
+    <div class="col-md-12">
+        <!-- Start Slider Main Heading -->
+        <div class="row ">
+            <div class="col-md-12 blog-slider-main-heading text-center">
+                <h1>
+                    {{ result.title}}
+                </h1>
+            </div>
+        </div>
+        <!-- End Slider Main Heading -->
+    </div>
+</div>
+{% endblock slider %}
+<!-- End Slider -->
+
+<!-- Start Main body -->
+{% block main_body %}
+
+<div class="row pl-5">
+    <div class="col-md-8 blog-section">
+        <!-- Start blog description -->
+        <div class="row pt-5">
+            <div class="col-md-12">
+                {{result.description | safe}}
+            </div>
+        </div>
+        <!-- End blog description -->
+
+        <!-- Start Comment Form -->
+        <div class="row">
+            <div class="col-md-12 comment-form">
+                <!-- Start comment form heading -->
+                <div class="row heading">
+                    <div class="col-md-12">Submit a Comment</div>
+                </div>
+                <!-- End comment form heading -->
+                <!-- Start comment form content -->
+                <div class="row form-content">
+                    <div class="col-md-12">Your email address will not be published. Required fields are marked *</div>
+                </div>
+                <!-- End comment form content -->
+                <form method="POST" action="/insert_post_comments">
+                    {% csrf_token %}
+                    <!-- Start Form -->
+                    <div class="row form-align">
+                        <div class="col-md-12">
+                            <!-- Start Contact us form comments -->
+                            <div class="row c-u-form c-u-form-without-p">
+                                <div class="col-md-12 c-u-form-textarea">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="7" placeholder="Comment" name="ecomment" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Contact us form comments -->
+
+                            <!-- Start Name and Email -->
+                            <div class="row">
+                                <!-- Start Name -->
+                                <div class="col-md-6 col-12">
+                                    <div class="row">
+                                        <div class="col-md-12 col-12 c-u-form c-u-form-without-p">
+                                            <div class="form-group pr-3">
+                                                <input type="text" class="form-control" placeholder="Name*" name="ename" required/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Name -->
+                                <!-- Start Email -->
+                                <div class="col-md-6 col-12">
+                                    <div class="row">
+                                        <div class="col-md-12 col-12 c-u-form c-u-form-without-p">
+                                            <div class="form-group pr-3">
+                                                <input type="email" class="form-control" placeholder="Email*" name="eemail" required/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Email -->
+                            </div>
+                            <!-- End Name and Email -->
+
+
+                            <!-- Start hidde input to send post id -->
+                            <input type="hidden" name="epostid" value="{{result.id}}">
+                            <!-- End hidde input to send post id -->
+
+                            <!-- Start Submit button -->
+                            <div class="row c-u-form c-u-form-without-p">
+                                <div class="col-md-3">
+                                    <button type="submit" class="btn btn-outline-primary btn-block">Submit Comment</button>
+                                </div>
+                            </div>
+                            <!-- End Submit button -->
+                        </div>
+                    </div>
+                    <!-- End Form -->
+                </form>
+            </div>
+        </div>
+        <!-- End Comment Form -->
+    </div>
+
+    <!-- Start Show comments -->
+    <div class="col-md-4">
+        <!-- Start comment body -->
+        <div class="row pt-5 pb-5">
+            <div class="col-md-12 comments">
+                <!-- Star Comments Heading -->
+                <div class="row ">
+                    <div class="col-md-12 comments-heading">
+                        Comments
+                    </div>
+                </div>
+                <!-- End Comments Heading -->
+                {% for i in obj_comments %}
+                <!-- Star User Heading -->
+                <div class="row ">
+                    <div class="col-md-12 user-heading">
+                       {{i.name}}
+                    </div>
+                </div>
+                <!-- End User Heading -->
+
+                <!-- Star User Comments -->
+                <div class="row ">
+                    <div class="col-md-12 user-comment">
+                       {{i.comment}}
+                    </div>
+                </div>
+                <!-- End User Comments -->
+
+                <!-- Star Date Time -->
+                <div class="row ">
+                    <div class="col-md-12 user-comment-date-time">
+                       {{i.timestamp}}
+                    </div>
+                </div>
+                <!-- End Date Time -->
+
+                {% endfor %}
+            </div>
+        </div>
+        <!-- End comment body -->
+
+    </div>
+    <!-- End Show comments -->
+</div>
+
+{% endblock main_body %}
+<!-- End Main body -->
+
+
+

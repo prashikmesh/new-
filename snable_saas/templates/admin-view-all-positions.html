@@ -1,0 +1,64 @@
+{% extends 'admin-career-dashboard.html' %}
+{% load static %}
+{% block title %}
+<title>Show All Positions</title>
+{% endblock title %}
+
+
+{% block position_admin_tab %}
+
+<!-- Start Heading -->
+<div class="row">
+    <div class="col-md-12 text-primary">
+        <h5>All Positions</h5>
+    </div>
+</div>
+<!-- End Heading -->
+
+<!-- Start content -->
+<div class="row pt-4">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>#</th>
+                  <th>Positions</th>
+                  <th>Description</th>
+                  <th>BLOCK / UNBLOCK</th>
+                  <th colspan="2" class="text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for i in result %}
+                <tr>
+                  <td>{{ i.id }}</td>
+                  <td>{{ i.position }}</td>
+                  <td>{{ i.description | safe }}</td>
+                  <th>
+                      <a href="{% url 'position_status' i.id i.status %}">
+                          {{ i.status }}
+                      </a>
+                  </th>
+                  <td>
+                      <a href="{% url 'edit_position' i.id %}">
+                          <button type="button" class="btn btn-success btn-sm">UPDATE</button>
+                      </a>
+                  </td>
+                  <td>
+                      <a href="{% url 'delete_position_record' i.id %}" onclick="return confirm('Are you sur you want to delete this item.')">
+                          <button type="button" class="btn btn-danger btn-sm" >DELETE</button>
+                      </a>
+                  </td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- End Content -->
+
+
+
+{% endblock position_admin_tab %}

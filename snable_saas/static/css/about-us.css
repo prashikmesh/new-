@@ -1,0 +1,335 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url('Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url('Nunito-VariableFont_wght.ttf');
+}
+
+
+:root
+{
+    --color-text-1:#3F4C6E;    
+    --color-text-2:#5D636E;
+    --color-text-4:#fff;
+    --font-family-q-sand :"Quicksand";
+    --font-family-nunito :"Nunito";
+}
+
+.header-navigation
+{
+    background-image: linear-gradient(to top right, rgb(135,112,183,1), rgb(135,112,183,0));
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.header-navigation .slider .about-heading
+{
+    padding-top: 150px;
+}
+.main-body
+{
+    background-image: none;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+}
+
+.main-body .about-u-head-content
+{
+    font-size: 24px;
+    font-weight: normal;
+    color: var(--color-text-2);
+    font-family: var(--font-family-nunito);
+    padding-top: 25px;
+}
+
+.main-body .our-team-heading
+{
+    font-size: 48px;
+    color: var(--color-text-1);
+    font-family: var(--font-family-q-sand);
+    font-weight: 600;
+    padding-top: 180px;
+}
+
+.main-body .ceo, .main-body .hr
+{
+    padding-top: 150px;
+}
+
+.main-body .ceo .ceo-info
+{
+    padding-top:   50px;
+}
+
+.main-body .ceo .ceo-info .ceo-heading
+{
+    font-size: 32px;
+    font-family: var(--font-family-q-sand);
+    color: var(--color-text-1);
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.main-body .ceo .ceo-info .ceo-sub-heading
+{
+    font-family: var(--font-family-q-sand);
+    color: var(--color-text-1);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    padding-top: 18px;
+}
+
+.main-body .ceo .ceo-info .ceo-content
+{
+    font-size: 22px;
+    font-family: var(--font-family-nunito);
+    font-weight: 400;
+    color:var(--color-text-2);
+    padding-top: 20px;
+    line-height: 145%;
+}
+
+.main-body .ceo .ceo-info .ceo-follow-icon
+{
+    padding-top: 35px;
+}
+
+.main-body .ceo .ceo-info .ceo-follow-icon a
+{
+    border: 1px solid;
+    border-color: var(--color-text-1);
+    padding:1px 3px;
+    font-size:28px;
+}
+
+.main-body a i {
+    color: var(--color-text-1);
+}
+
+
+.main-body .hr img
+{
+    width:100%;
+}
+
+.main-body .hr .hr-heading
+{
+    font-family: var(--font-family-q-sand);
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--color-text-1);
+    padding-top: 40px;
+}
+
+.main-body .hr .hr-sub-heading
+{
+    font-family: var(--font-family-q-sand);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-text-2);
+    padding-top: 15px;
+}
+
+.main-body .hr .hr-follow-icon
+{
+    padding-top: 25px;
+}
+
+.main-body .hr .hr-follow-icon a
+{
+    border: 1px solid;
+    border-color: var(--color-text-1);
+    padding:1px 2px;
+    color: var(--color-text-1);
+    font-size:35px;
+}
+
+/* Start Mobile view*/
+@media all and (min-width: 361px) {
+    .mobile-view-about-us-content
+    {
+        visibility:hidden;
+    }
+
+}
+@media all and (max-width: 360px) {
+    .header-navigation
+    {
+        background: linear-gradient(179.98deg, rgba(107, 140, 222, 0.45) 21%, rgba(99, 49, 148, 0.75) 107.09%);
+    }
+
+    .header-navigation .slider .about-heading
+    {
+        padding-top: 20px;
+        font-family: var(--font-family-q-sand);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: var(--color-text-4);
+    }
+
+    .header-navigation .slider .slider-image
+    {
+        padding-top:27px;
+    }
+
+    .mobile-view-about-us-content
+    {
+        font-family: var(--font-family-nunito);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 145%;
+        color: var(--color-text-4);
+        padding-top:5px;
+    }
+
+    .main-body .about-u-head-content
+    {
+        visibility:hidden;
+        font-size: 0px;
+        font-weight: normal;
+        color: var(--color-text-2);
+        font-family: var(--font-family-nunito);
+        padding-top: 0px;
+    }
+
+    .main-body .our-team-heading
+    {
+        padding-top: 22px;
+        font-family: var(--font-family-q-sand);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        color: var(--color-text-1);
+    }
+
+    .main-body .ceo, .main-body .hr
+    {
+        padding-top: 16px;
+    }
+
+    .main-body .ceo .ceo-info
+    {
+        padding-top: 26px;
+    }
+
+    .main-body .ceo .ceo-image
+    {
+        padding-top:16px;
+        padding-left:50px;
+        padding-right:50px;
+    }
+
+    .main-body .ceo .ceo-info .ceo-heading
+    {
+        font-family: var(--font-family-q-sand);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--color-text-1);
+        text-align:center;
+    }
+
+    .main-body .ceo .ceo-info .ceo-sub-heading
+    {
+        padding-top: 2px;
+        font-family: var(--font-family-q-sand);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--color-text-1);
+        text-align:center;
+    }
+
+    .main-body .ceo .ceo-info .ceo-content
+    {
+        font-family: var(--font-family-nunito);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 145%;
+        text-align: center;
+        color: var(--color-text-2);
+    }
+
+    .main-body .ceo .ceo-info .ceo-follow-icon
+    {
+        padding-top: 16px;
+        text-align:center;
+    }
+
+    .main-body .ceo .ceo-info .ceo-follow-icon a
+    {
+        border: 1px solid;
+        border-color: var(--color-text-1);
+        padding: 0px 1px;
+        font-size: 20px;
+    }
+
+    .main-body .ceo .ceo-info .ceo-follow-icon a i
+    {
+        font-size:19px;
+    }
+
+    .main-body .hr
+    {
+        padding-bottom:30px
+    }
+    .main-body .hr .hr-image
+    {
+        padding: 30px 50px 0px 50px;
+    }
+
+    .main-body .hr .hr-heading
+    {
+        padding-top: 12px;
+        font-family: var(--font-family-q-sand);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--color-text-1);
+
+    }
+
+    .main-body .hr .hr-sub-heading
+    {
+        padding-top: 2px;
+        font-family: var(--font-family-nunito);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--color-text-2);
+    }
+
+    .main-body .hr .hr-follow-icon
+    {
+        padding-top: 12px;
+    }
+
+    .main-body .hr .hr-follow-icon a
+    {
+        border: 1px solid;
+        border-color: var(--color-text-1);
+        padding: 1px 2px;
+        color: var(--color-text-1);
+        font-size: 16px;
+    }
+
+    .main-body .hr .hr-follow-icon a i
+    {
+        font-size: 16px;
+    }
+}
+/* End mobile view */

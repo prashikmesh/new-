@@ -1,0 +1,274 @@
+{% extends 'index.html' %} {% load static %} {% block title %}
+<title>Web & App Development</title>
+{% endblock title %}
+
+<!-- Own Home Screen CSS -->
+{% block own_css %}
+<!-- own common CSS fro Digital marketing, Virtual Assistance, Web and App Draft -->
+<link rel="stylesheet" href="{% static 'css/common-css-dm-va-wad.css' %}" />
+<!-- Own web-app-development CSS -->
+<link rel="stylesheet" href="{% static 'css/web-app-development.css' %}" />
+{% endblock own_css %}
+
+<!-- Start Slider -->
+{% block slider %}
+
+<div class="row slider pl-5 pr-5">
+    <div class="col-md-12">
+        <div class="row">
+            <!-- Start Haeding, Content, Button -->
+            <div class="col-md-6 slider-heading-button">
+                <!-- Start Traning and placement Heading -->
+                <div class="row slider-heading">
+                    <div class="col-md-12">
+                        <h1>Web & App Development</h1>
+                    </div>
+                </div>
+                <!-- End Traning and placement Heading -->
+                <!-- Start Traning and placement Button -->
+                <div class="row slider-button">
+                    <div class="col-md-4 pl-3 pr-5"><button type="button" class="btn btn-primary btn-block btn-lg" data-target="#modal4" data-toggle="modal">Contact now</button></div>
+                    <div class="col-md-8"></div>
+                </div>
+                <!-- Start Traning and placement Button -->
+            </div>
+            <!-- End Haeding, Content, Button -->
+            <div class="col-md-2"></div>
+            <!-- Start Slider Image -->
+            <div class="col-md-4">
+                <div class="row slider-image">
+                    <div class="col-md-12">
+                        <img class="float-right img-fluid" src="{% static 'img/dm-header-image.png' %}" alt="img icon" />
+                    </div>
+                </div>
+            </div>
+            <!-- End Slider Image -->
+        </div>
+        <div class="row mobile-view-slider-button">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary btn-block" data-target="#modal4" data-toggle="modal">Contact now</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock slider %}
+<!-- End Slider -->
+
+<!-- Start Main body -->
+{% block main_body %}
+
+<!-- Start Our Bespoke Service for You -->
+<div class="row text-center our-services-tagline">
+    <div class="col-md-12">
+        Our Bespoke Service for You
+    </div>
+</div>
+<!-- End Our Bespoke Service for You -->
+
+<!-- Start Buttons -->
+<div class="row pl-5 pr-5 d-flex justify-content-center services-btn">
+    <div class="col-md-3">
+        <a href="{% url 'digitalmarketing' %}" class="text-decoration-none">
+            <button type="button" class="btn btn-outline-secondary btn-lg btn-block">Digital Marketing</button>
+        </a>
+    </div>
+
+    <div class="col-md-3">
+        <a href="{% url 'webappdevelopment' %}" class="text-decoration-none">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Web & App Development</button>
+        </a>
+    </div>
+
+    <div class="col-md-3">
+        <a href="{% url 'virtualassistance' %}" class="text-decoration-none">
+            <button type="button" class="btn btn-outline-secondary btn-block btn-lg">Virtual Assistance</button>
+        </a>
+    </div>
+</div>
+
+<div class="row pl-5 pr-5  mobile-view-services-btn">
+    <div class="col-md-12">
+        <div class="row ser-btn">
+            <div class="col-md-12 p-0">
+                <a href="{% url 'digitalmarketing' %}" class="text-decoration-none">
+                    <button type="button" class="btn btn-outline-secondary btn-block">Digital Marketing</button>
+                </a>
+            </div>
+        </div>
+        <div class="row ser-btn">
+            <div class="col-md-12 p-0">
+                <a href="{% url 'webappdevelopment' %}" class="text-decoration-none">
+                    <button type="button" class="btn btn-primary btn-block">Web & App Development</button>
+                </a>
+            </div>
+        </div>
+        <div class="row ser-btn">
+            <div class="col-md-12 p-0">
+                <a href="{% url 'virtualassistance' %}" class="text-decoration-none">
+                    <button type="button" class="btn btn-outline-secondary btn-block">Virtual Assistance</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Buttons -->
+
+<!--
+        - Use common css alignment here.
+        - you will write css for digital marketing page.
+        - i will use same digital marketing alignment here.
+    -->
+
+<!-- Start Web Development  -->
+<div class="row pl-5 pr-5 s-m-marketing">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-sm-1 order-sm-1"></div>
+            <!-- Start Image -->
+            <div class="col-sm-4 order-sm-2 col-12 order-2">
+                <img src="{% static 'img/web-app-development-1.png' %}" class="img-fluid" alt="" />
+            </div>
+            <!-- End Image -->
+            <div class="col-sm-1 order-sm-6"></div>
+            <!-- Start Content -->
+            <div class="col-sm-5 order-sm-7 col-12 order-1 s-m-marketing-heading-content-btn">
+                <div class="row ">
+                    <div class="col-md-12 s-m-marketing-heading">
+                        Web Development
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-12 s-m-marketing-content">
+                        <ul class="list-group">
+                            <li class="">Full Stack Web Development</li>
+                            <li class="">ECommerce Application</li>
+                            <li class="">Content Managment System</li>
+                            <li class="">Web Support & Maintenance</li>
+                            <li class="">QA & Testing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row s-m-marketing-btn">
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-primary btn-block"  data-target="#modal4" data-toggle="modal">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Content -->
+            <div class="col-sm-1 order-sm-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 mobile-view-s-m-marketing-btn">
+                <div class="row mobile-view-sm-btn">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-primary btn-block btn-sm" data-target="#modal4" data-toggle="modal">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Web Development  -->
+
+<!-- Start App Development -->
+<div class="row pl-5 pr-5 s-m-marketing">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <!-- Start End Content -->
+            <div class="col-md-5 s-m-marketing-heading-content-btn">
+                <div class="row">
+                    <div class="col-md-12 s-m-marketing-heading">
+                        App Development
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-12 s-m-marketing-content">
+                        <ul class="list-group">
+                            <li class="">UI/UX for Apps</li>
+                            <li class="">Android App Development</li>
+                            <li class="">iOS App Development</li>
+                            <li class="">App Maintance & Support</li>
+                            <li class="">QA & Testing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row s-m-marketing-btn">
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-primary btn-block"  data-target="#modal4" data-toggle="modal">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Content -->
+            <div class="col-md-1"></div>
+            <!-- Start Content Writing Image -->
+            <div class="col-md-4">
+                <img src="{% static 'img/web-app-development-2.png' %}" class="img-fluid" alt="" />
+            </div>
+            <!-- End Content Writing Image -->
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 mobile-view-s-m-marketing-btn">
+                <div class="row mobile-view-sm-btn">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-primary btn-block btn-sm" data-target="#modal4" data-toggle="modal">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End App Development -->
+
+<!-- Start Custom ERP  -->
+<div class="row pl-5 pr-5 s-m-marketing">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-1 order-sm-1"></div>
+            <!-- Start SEO Image -->
+            <div class="col-sm-4 order-sm-2 col-12 order-2">
+                <img src="{% static 'img/web-app-development-3.png' %}" class="img-fluid" alt="" />
+            </div>
+            <!-- End SEO Image -->
+            <div class="col-sm-1 order-sm-6"></div>
+            <!-- Start SEO Content -->
+            <div class="col-sm-5 order-sm-7 col-12 order-1 s-m-marketing-heading-content-btn">
+                <div class="row">
+                    <div class="col-md-12 s-m-marketing-heading">Custom ERP <small>(Softwere per Requirment)</small></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 s-m-marketing-content">
+                        <ul class="list-group">
+                            <li class="">E-commerce apps for Android, iOS, and the web.</li>
+                            <li class="">Security, Speed, Scalability, Responsiveness, and SEO compliance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row s-m-marketing-btn">
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-primary btn-block"  data-target="#modal4" data-toggle="modal">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End SEO Content -->
+            <div class="col-sm-1 order-sm-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 mobile-view-s-m-marketing-btn">
+                <div class="row mobile-view-sm-btn">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-primary btn-block btn-sm" data-target="#modal4" data-toggle="modal">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- End Custom ERP -->
+
+{% endblock main_body %}
+<!-- End Main body -->

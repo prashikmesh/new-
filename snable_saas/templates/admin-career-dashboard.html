@@ -1,0 +1,101 @@
+{% extends 'admin-index.html' %}
+{% load static %}
+{% block title %}
+<title>Career Home Page</title>
+{% endblock title %}
+<!-- Start bootstrap table -->
+{% block bs_table %}
+<!-- Start Heading -->
+<div class="row pt-4">
+   <div class="col-md-12 text-primary text-center">
+      <h4> Career Dashboard </h4>
+   </div>
+</div>
+<!-- End Heading -->
+<!-- Start blog admin tab -->
+<div class="row pt-5 pb-5 border border-primary border-bottom-0 border-left-0 border-right-0">
+   <!-- Start Blogs Tabs -->
+   <div class="col-md-2 border border-primary border-top-0 border-bottom-0 border-left-0">
+      <!-- Stat Add Blog -->
+      <div class="row mb-5">
+         <div class="col-md-12">
+            <a href="{% url 'show_all_applications' %}">
+               <button type="button" class="btn btn-info btn-sm btn-block">Show Applications</button>
+            </a>
+         </div>
+      </div>
+      <!-- End Add Blog -->
+      <!-- Stat view all Blog -->
+      <div class="row mb-5">
+         <div class="col-md-12">
+            <a href="{% url 'add_position' %}">
+            <button type="button" class="btn btn-info btn-sm btn-block">Add Position</button>
+            </a>
+         </div>
+      </div>
+      <!-- End view all Blog -->
+      <!-- Stat Blog Comments -->
+      <div class="row mb-5">
+         <div class="col-md-12">
+            <a href="{% url 'show_all_positions' %}">
+            <button type="button" class="btn btn-info btn-sm btn-block">Show Position</button>
+            </a>
+         </div>
+      </div>
+      <!-- End Blog Comments -->
+   </div>
+   <!-- End Blogs Tabs -->
+   <!-- Start Position form for add and tables to show, also showapplications -->
+   <div class="col-md-10">
+      {% block position_admin_tab %}
+
+         <!-- Start Heading -->
+         <div class="row">
+             <div class="col-md-12 text-primary">
+                 <h5>All Applications</h5>
+             </div>
+         </div>
+         <!-- End Heading -->
+
+         <!-- Start content -->
+         <div class="row pt-4">
+             <div class="col-md-12">
+                 <div class="table-responsive">
+                     <table class="table table-bordered">
+                       <thead class="table-primary">
+                         <tr>
+                           <th>#</th>
+                           <th>Full Name</th>
+                           <th>Email</th>
+                           <th>Mobile Number</th>
+                           <th>Position Applied For</th>
+                           <th>CV</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                       {% for i in result %}
+                         <tr>
+                           <td>{{ i.id }}</td>
+                           <td>{{ i.full_name }}</td>
+                           <td>{{ i.email }}</td>
+                           <td>{{ i.number }}</td>
+                           <td>{{ i.position_applied_for }}</td>
+                           <td>
+                               <a href="{{i.uploaded_cv.url}}" target="_blank">view</a>
+                           </td>
+                         </tr>
+                       {% endfor %}
+                       </tbody>
+                     </table>
+                 </div>
+             </div>
+         </div>
+         <!-- End Content -->
+
+      {% endblock position_admin_tab %}
+   </div>
+   <!-- End Position form for add and tables to show, also showapplications -->
+</div>
+<!-- End blog admin tab -->
+{% endblock bs_table %}
+<!-- End bootstrap table -->

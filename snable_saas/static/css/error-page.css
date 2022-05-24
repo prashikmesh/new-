@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url('Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url('Nunito-VariableFont_wght.ttf');
+}
+
+:root
+{
+    --color-text-1:#3F4C6E;    
+    --color-text-2:#5D636E;
+    --color-text-4:#fff;
+    --font-family-q-sand :"Quicksand";
+    --font-family-nunito :"Nunito";
+}
+.error
+{
+    padding-left:498px;
+    padding-right:498px;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.main-body .error-body
+{
+    background: #FFFFFF;
+    box-shadow: -4px -4px 7px rgba(132, 123, 123, 0.15), 4px 4px 7px rgba(132, 123, 123, 0.25);
+}
+
+.main-body .error-body .error-heading
+{
+    font-family: var(--font-family-q-sand);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 128px;
+    line-height: 160px;
+    color: var(--color-text-1);
+    text-align:center;
+    padding-top:184px;
+}
+
+.main-body .error-body .error-subheading
+{
+    font-family: var(--font-family-nunito);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 145%;
+    color: var(--color-text-2);
+    text-align:center;
+    padding-top:8px;
+    padding-bottom:184px;
+}
+
+@media all and (min-width: 361px)
+{
+
+}
+
+@media all and (max-width: 360px)
+{
+    .error
+    {
+        padding-left:0px;
+        padding-right:0px;
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+
+    .main-body .error-body
+    {
+        background: none;
+        box-shadow: none;
+    }
+
+    .main-body .error-body .error-heading
+    {
+        font-family: var(--font-family-q-sand);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 80px;
+        color: var(--color-text-1);
+    }
+
+    .main-body .error-body .error-subheading
+    {
+        font-family: var(--font-family-nunito);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 145%;
+        color: var(--color-text-2);
+        text-align:center;
+        padding-top:8px;
+        padding-bottom:184px;
+    }
+}

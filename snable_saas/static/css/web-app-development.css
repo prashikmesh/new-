@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url('Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url('Nunito-VariableFont_wght.ttf');
+}
+
+
+:root
+{
+    --color-text-1:#3F4C6E;    
+    --color-text-2:#5D636E;
+    --color-text-4:#fff;
+    --font-family-q-sand :"Quicksand";
+    --font-family-nunito :"Nunito";
+}
+
+.header-navigation
+{   
+    background-image: linear-gradient(to top right, rgb(239,106,58,1), rgb(239,106,58,0));
+    padding-left: 0px;
+    padding-right: 0px;      
+}
+
+/* Start Mobile View CSS */
+@media all and (min-width: 361px)
+{
+
+}
+
+@media all and (max-width: 360px)
+{
+    .header-navigation
+    {
+        background-image: linear-gradient(179.98deg, rgba(107, 140, 222, 0.45) 21%, rgba(239, 106, 58, 0.75) 107.09%);
+    }
+}
+/* End Mobile View CSS */

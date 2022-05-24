@@ -1,0 +1,423 @@
+{% extends 'index.html' %} {% load static %} {% block title %}
+<title>UI / UX Design</title>
+{% endblock title %}
+
+<!-- Own Home Screen CSS -->
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/traning-placemente.css' %}" />
+<link rel="stylesheet" href="{% static 'css/training-hiring-ui-ux.css' %}" />
+{% endblock own_css %}
+
+<!-- Start Slider -->
+{% block slider %}
+<div class="row slider pl-5 pr-5">
+    <div class="col-md-1"></div>
+    <!-- Start Sub Heading, Heading, Buttons -->
+    <div class="col-md-4 slider-heading-content-buttons">
+        <!-- Start Main Heading -->
+        <div class="row slider-heading">
+            <div class="col-md-12">
+                <h1>Become Expert UI & UX Designer</h1>
+            </div>
+        </div>
+        <!-- End Main Heading -->
+        <!-- Start Heading Sub Content -->
+        <!--<div class="row slider-content">
+            <div class="col-md-12">
+                Cloud Migration through Digital and Application development for your business.
+            </div>
+        </div>-->
+        <!-- End Heading Sub Content -->
+        <!-- Start Traning and placement Button -->
+        <div class="row slider-buttons">
+            <div class="col-sm-6">
+                <a href="https://calendly.com/snablein/book-and-appointment" class="text-decoration-none" target="_blank"> <button type="button" class="btn btn-primary btn-lg btn-block">Book & Appointment</button> &nbsp; </a>
+            </div>
+            <div class="col-sm-6">
+                <a href="/media/docs/e_brochure-Full_Content-Snable.pdf" class="text-decoration-none" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-lg btn-block">
+                        Download brochure
+                    </button>
+                    &nbsp;
+                </a>
+            </div>
+            <!--<div class="col-sm-4"></div>-->
+        </div>
+        <!-- Start Traning and placement Button -->
+    </div>
+    <!-- End Sub Heading, Heading, Buttons -->
+    <div class="col-md-2"></div>
+    <!-- Start Slider Image -->
+    <div class="col-md-4">
+        <div class="row slider-image">
+            <div class="col-md-12">
+                <img class="float-right img-fluid" src="{% static 'img/training-hiring-ui-ux-slider.png' %}" alt="img icon" />
+            </div>
+        </div>
+    </div>
+    <!-- End Slider Image -->
+    <div class="col-md-1"></div>
+</div>
+
+<!-- Start Traning and placement Button -->
+<div class="row mobile-view-slider-buttons pl-4 pr-4">
+    <div class="col-sm-6">
+        <a href="https://calendly.com/snablein/book-and-appointment" class="text-decoration-none" target="_blank"> <button type="button" class="btn btn-primary btn-lg btn-block">Book & Appointment</button> &nbsp; </a>
+    </div>
+    <div class="col-sm-6">
+        {% for i in result %}
+        <a href="{{i.docs.url}}" class="text-decoration-none" target="_blank">
+            <button type="button" class="btn btn-outline-primary btn-lg btn-block">
+                Download brochure
+            </button>
+            &nbsp;
+        </a>
+        {% endfor %}
+    </div>
+    <!--<div class="col-sm-4"></div>-->
+</div>
+<!-- Start Traning and placement Button -->
+{% endblock slider %}
+<!-- End Slider -->
+
+<!-- Start Main body -->
+{% block main_body %}
+
+<!-- Start Program overview heading -->
+<div class="row pl-5 pr-5">
+    <div class="col-md-12 heading-program-overview">
+        Program Overview
+    </div>
+</div>
+<!-- End Program overview heading -->
+
+<!-- Start Key highlight sub heading -->
+<div class="row pl-5 pr-5">
+    <div class="col-md-12 subheading-key-highlights">
+        Key Highlights
+    </div>
+</div>
+<!-- End Key highlight sub heading -->
+
+<!-- Start Program Overview Content -->
+<div class="row program-overview-content pl-5 pr-5">
+    <div class="col-md-4">
+        <ul>
+            <li>24 weeks of Learning</li>
+            <li>Advanced Syllabus as per industry requirement</li>
+            <li>100% hiring</li>
+        </ul>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+        <ul>
+            <li>Social Media Marketing Post</li>
+            <li>Website Design and Mobile Application Design</li>
+            <li>Resume Writing</li>
+        </ul>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+<!-- End Program Overview Content -->
+
+<!-- Start tool covered design -->
+<div class="row heading-tools-covered-design pl-5 pr-5">
+    <div class="col-md-12">
+        Tools Covered - Design
+    </div>
+</div>
+<!-- End tool covered design -->
+
+<!-- Start tools icons -->
+<div class="row pl-5 pr-5">
+    <div class="col-md-1">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid" src="{% static 'img/ui-ux-sketch.png' %}" alt="Chania">
+            </div>
+        </div>
+        <div class="row tools-icon-content">
+            <div class="col-md-12">
+                Sketch
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid" src="{% static 'img/ui-ux-figma.png' %}" alt="Chania">
+            </div>
+        </div>
+        <div class="row tools-icon-content">
+            <div class="col-md-12">
+                Figma
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid" src="{% static 'img/ui-ux-adobe-xd.png' %}" alt="Chania">
+            </div>
+        </div>
+        <div class="row tools-icon-content">
+            <div class="col-md-12">
+                Adobe XD
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid" src="{% static 'img/ui-ux-invision.png' %}" alt="Chania">
+            </div>
+        </div>
+        <div class="row tools-icon-content">
+            <div class="col-md-12">
+                Invision
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid" src="{% static 'img/ui-ux-illustrator.png' %}" alt="Chania">
+            </div>
+        </div>
+        <div class="row tools-icon-content">
+            <div class="col-md-12">
+                Illustrator
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid" src="{% static 'img/ui-ux-photoshop.png' %}" alt="Chania">
+            </div>
+        </div>
+        <div class="row tools-icon-content">
+            <div class="col-md-12">
+                Photoshop
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid" src="{% static 'img/ui-ux-balsamiq.png' %}" alt="Chania">
+            </div>
+        </div>
+        <div class="row tools-icon-content">
+            <div class="col-md-12">
+                Balsamiq
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5"></div>
+</div>
+<!-- end tools icons -->
+
+<!-- Start Description heading -->
+<div class="row pl-5 pr-5">
+    <div class="col-md-12 description">
+        Description
+    </div>
+</div>
+<!-- End Description heading -->
+
+<!-- Start Description content heading -->
+<div class="row pl-5 pr-5">
+    <div class="col-md-12 description-content">
+        The common theme throughout this course is that we will be designing with users in mind. that being said, How do they do ? How do they act ? those are the questions we will strive to answer in this module as we dig into popular research techniques and methodologies.
+    </div>
+</div>
+<!-- End Description content heading -->
+
+<!-- Start Skill you will learn and job opportunity -->
+<div class="row pl-5 pr-5">
+    <!-- Start skills you will learn -->
+    <div class="col-md-3">
+        <div class="row">
+            <div class="col-md-12">
+                Skills You Will Learn
+            </div>
+        </div>
+    </div>
+    <!-- End skills you will learn -->
+    <div class="col-md-1"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-5"></div>
+</div>
+<!-- End Skill you will learn and job opportunity -->
+
+
+<!-- Start Download Brochure  -->
+<div class="row d-flex justify-content-center text-center pt-5 pb-5">
+    <div class="col-md">
+        <a href="/media/docs/e_brochure-Full_Content-Snable.pdf" target="_blank">
+            <button type="button" class="btn btn-primary btn-lg">
+                Download brochure
+            </button>
+        </a>
+    </div>
+</div>
+<!-- Start Download Brochure  -->
+{% endblock main_body %}
+<!-- End Main body -->
+
+<!-- Start Contact US Form & Google Map -->
+{% block main_body_contact_form %}
+<div class="container-fluid">
+    <div class="row contact-us pl-5 pr-5 pb-3">
+        <!-- Start Contact Us Form -->
+        <div class="col-md-6">
+            <!-- Start Contact Us heading  -->
+            <div class="row contact-us-heading">
+                <div class="col-md-12">
+                    Fill in your Details
+                </div>
+            </div>
+            <!-- End Contact Us heading  -->
+
+            <form method="post" action="insert_training_hiring_form" class="needs-validation" novalidate>
+                {% csrf_token %}
+                <!-- Start Full Name -->
+                <div class="row c-u-form c-u-form-without-p">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your full name" name="full_name" required />
+                        </div>
+                    </div>
+                </div>
+                <!-- End Full Name -->
+
+                <!-- Start Qualification -->
+                <div class="row c-u-form c-u-form-without-p">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your Qualifications" name="qualifications" required />
+                        </div>
+                    </div>
+                </div>
+                <!-- Start Qualification -->
+
+                <!-- Start Email Address -->
+                <div class="row c-u-form c-u-form-without-p">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your email address" id="myemail" name="email_id" required />
+                        </div>
+                    </div>
+                </div>
+                <!-- End Email Address -->
+
+                <!-- Start Mobile & Whatsapp number -->
+                <div class="row">
+                    <!-- Start Mobile number-->
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-2 col-3 contact-mobile-whats-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="col-md-10 col-9 c-u-form c-u-form-without-p">
+                                <div class="form-group pr-3">
+                                    <input type="number" class="form-control" placeholder="Enter your number" name="mobile_number" id="mynum" required />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Mobile number-->
+                    <!-- Start Whatsapp number-->
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-2 col-3 contact-mobile-whats-icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="col-md-10 col-9 c-u-form c-u-form-without-p">
+                                <div class="form-group pr-3">
+                                    <input type="number" class="form-control" placeholder="Enter your number" name="whatsapp_number" id="mynum1" required />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Whatsapp number-->
+                </div>
+                <!-- End Mobile & Whatsapp number -->
+
+                <!-- Start Contact us form comments -->
+                <div class="row c-u-form c-u-form-without-p">
+                    <div class="col-md-12 pr-1 pl-4">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" id="comment" name="message" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Contact us form comments -->
+
+                <!-- Start Submit button -->
+                <div class="row c-u-form c-u-form-without-p">
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-outline-primary btn-block">Submit</button>
+                    </div>
+                    <div class="col-md-8 pt-3 text-white">
+                        {% for i in messages %}
+                        <!--{{i}} -->
+                        {% if i.tags %}
+                        <script>
+                            alert("{{ i }}");
+                        </script>
+                        {% endif %} {% endfor %}
+
+                        <!--{% if messages %}
+                                        {% for message in messages %}
+                                            {% if message.tags %}
+                                                    <script>alert("{{ message }}")</script>
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endif %}-->
+                    </div>
+                </div>
+                <!-- End Submit button -->
+            </form>
+        </div>
+        <!-- End Contact Us Form -->
+
+        <!-- Start google map for address -->
+        <div class="col-md-6">
+            <div class="row google-map-address">
+                <div class="col-md-12 google-map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3721.994315605251!2d79.0599659!3d21.1127928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb961cf6806a0ad6e!2sSnable%20Private%20Limited%20%7C%20SaaS%20Based%20Organization%20%7C%20Information%20Technologies%20%7C%20Digital%20Marketing%20%7C%20Mobile%20Application%20Development!5e0!3m2!1sen!2sin!4v1648702479280!5m2!1sen!2sin"
+                        width="600"
+                        height="450"
+                        style="border: 0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        width="100%"
+                        class="responsive-iframe"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- End google map for address -->
+    </div>
+    <div class="row mobile-view-google-map-address">
+        <div class="col-md-12 mobile-view-google-map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3721.994315605251!2d79.0599659!3d21.1127928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb961cf6806a0ad6e!2sSnable%20Private%20Limited%20%7C%20SaaS%20Based%20Organization%20%7C%20Information%20Technologies%20%7C%20Digital%20Marketing%20%7C%20Mobile%20Application%20Development!5e0!3m2!1sen!2sin!4v1648702479280!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                width="100%"
+                class="responsive-iframe"
+            ></iframe>
+        </div>
+    </div>
+</div>
+{% endblock main_body_contact_form %}
+<!-- End Contact US Form & Google Map -->

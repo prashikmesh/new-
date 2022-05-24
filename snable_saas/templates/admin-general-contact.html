@@ -1,0 +1,60 @@
+{% extends 'admin-index.html' %}
+{% load static %}
+{% block title %}
+<title>General Contact Detail</title>
+{% endblock title %}
+
+<!-- Start bootstrap table -->
+{% block bs_table %}
+
+<!-- Start Heading -->
+<div class="row pt-4">
+    <div class="col-md-12 text-primary text-center">
+        <h4> General Contact Data </h4>
+    </div>
+</div>
+<!-- End Heading -->
+
+<!-- Start Table -->
+<div class="row pt-4">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>#</th>
+                  <th>Full Name</th>
+                  <th>Company Name</th>
+                  <th>Designation</th>
+                  <th>Email</th>
+                  <th>Mobile Number</th>
+                  <th>Whatsapp Number</th>
+                  <th>Services</th>
+                  <th>Sub Services</th>
+                  <th>Message</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for i in result %}
+                <tr>
+                  <td>{{ i.id }}</td>
+                  <td>{{ i.full_name }}</td>
+                  <td>{{ i.company_name }}</td>
+                  <td>{{ i.designation }}</td>
+                  <td>{{ i.email }}</td>
+                  <td>{{ i.mobile_number }}</td>
+                  <td>{{ i.whatsapp_number }}</td>
+                  <td>{{ i.services_name }}</td>
+                  <td>{{ i.sub_services_name }}</td>
+                  <td>{{ i.message }}</td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- End Table -->
+{% endblock bs_table %}
+<!-- End bootstrap table -->

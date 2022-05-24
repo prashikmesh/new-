@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url('Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url('Nunito-VariableFont_wght.ttf');
+}
+
+
+:root
+{
+    --color-text-1:#3F4C6E;
+    --color-text-2:#5D636E;
+    --color-text-4:#fff;
+    --font-family-q-sand :"Quicksand";
+    --font-family-nunito :"Nunito";
+}
+
+.header-navigation
+{
+    background-image: linear-gradient(to top right, rgb(99,49,148,1), rgb(107,140,222,6%));
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.slider
+{
+    padding-top: 80px;
+}
+
+.slider-heading
+{
+    padding-top: 100px;
+}
+
+.main-body .question
+{
+    padding-top:20px;
+    font-family: var(--font-family-q-sand);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 60px;
+    color: var(--color-text-1);
+    text-align: justify;
+}
+
+.main-body .answer
+{
+    padding-top:8px;
+    font-family: var(--font-family-nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
+    color: var(--color-text-2);
+    text-align: justify;
+}
+
+/* Start Mobile View*/
+@media all and (min-width: 361px)
+{
+
+}
+
+@media all and (max-width: 360px)
+{
+    .header-navigation
+    {
+        background-image: linear-gradient(179.39deg, rgba(107, 140, 222, 0.45) 24.56%, rgba(99, 49, 148, 0.75) 117.73%);;
+    }
+
+    .slider
+    {
+        padding-top: 40px;
+    }
+
+    .slider-heading
+    {
+        padding-top: 0px;
+        padding-bottom:86px;
+        text-align:center;
+    }
+
+    .main-body .question
+    {
+        padding-top: 30px;
+        font-family: var(--font-family-q-sand);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--color-text-1);
+        text-align: justify;
+    }
+
+    .main-body .answer
+    {
+        padding-top: 9px;
+        font-family: var(--font-family-nunito);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 145%;
+        color: var(--color-text-2);
+        text-align: justify;
+    }
+}
+/* End Mobile View*/

@@ -1,0 +1,85 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}
+<title>Blogs</title>
+{% endblock title %}
+
+<!-- Own Home Screen CSS -->
+<!-- Create new about us css and add in static folder-->
+{% block own_css %}
+<link rel="stylesheet" href="{% static 'css/home-screen.css' %}" />
+<link rel="stylesheet" href="{% static 'css/blogs.css' %}" />
+{% endblock own_css %}
+<!-- Own Home Screen CSS -->
+
+<!-- Start Slider -->
+{% block slider %}
+<div class="row slider pl-5 pr-5">
+    <div class="col-md-12">
+        <!-- Start Slider sub heading -->
+        <div class="row">
+            <div class="col-md-12 blog-slider-subheading">
+                BLOG
+            </div>
+        </div>
+        <!-- End Slider sub heading -->
+        <!-- Start Slider Main Heading -->
+        <div class="row ">
+            <div class="col-md-12 blog-slider-main-heading">
+                <h1>
+                    Want to Learn About Marketing?
+                </h1>
+            </div>
+        </div>
+        <!-- End Slider Main Heading -->
+    </div>
+</div>
+{% endblock slider %}
+<!-- End Slider -->
+
+<!-- Start Main body -->
+{% block main_body %}
+<div class="row blog-row">
+    {% for i in result1%}
+    <div class="col-md-6 blog-column">
+        <div class="row">
+            <div class="col-md-12 blog-post">
+                <!-- Start Post main heading -->
+                <div class="row">
+                    <div class="col-md-12 post-main-heading">
+                        {{i.title}}
+                    </div>
+                </div>
+                <!-- End Post main heading -->
+
+                <!-- Start Post content -->
+                <!--<div class="row">
+                    <div class="col-md-12 post-content">
+                        by Digital Sumedh | Aug 30, 2021 | Digital Marketing
+                    </div>
+                </div>-->
+                <!-- End Post content -->
+
+                <!-- Start Post content -->
+                <div class="row">
+                    <div class="col-md-12 post-content">
+                        {{i.body}}
+                    </div>
+                </div>
+                <!-- End Post content -->
+
+                <!-- Start Read More button -->
+                <div class="row">
+                    <div class="col-md-12 read-more">
+                        <a href="{% url 'blogreadmore' i.id %}" class="text-decoration-none">Read More</a>
+                    </div>
+                </div>
+                <!-- End Read More button -->
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock main_body %}
+<!-- End Main body -->
