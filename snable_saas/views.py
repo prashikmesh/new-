@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-//aruna dilo ki shooter hai mera scooter
+//prashik meshram the boss 
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.conf import settings
@@ -423,6 +423,6 @@ def insertApplication(request):
 def loadCareer(request):
     obj = Positions.objects.filter(status='UNBLOCK')
     return render(request,'career.html', {'result':obj})
-
+// kelo bayi changes bgh
 
 
